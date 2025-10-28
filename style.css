@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --blue100: hsl(225, 100%, 94%);
+    --blue700: hsl(245, 75%, 52%);
+    --blue50: hsl(225, 100%, 98%);
+    --gray600: hsl(224, 23%, 55%);
+    --blue950: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--blue100);
+    background-image: url(images/pattern-background-desktop.svg);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue50);
+    padding: 40px;
+}
+
+.girl_dancing_img{
+   margin: -40px;
+   border-radius: 10px 10px 0 0;
+}
+
+h1{
+    padding: 20px;
+    margin: 40px auto 10px auto;
+}
+
+.description{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
