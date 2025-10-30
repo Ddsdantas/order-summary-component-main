@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Order summary card</title>
 
 </head>
+
 <body>
   <div class="container">
     <img src="images/illustration-hero.svg" class="girl_dancing_img" alt="girl dancing with headphone">
@@ -18,14 +20,20 @@
       and podcasts on any device anywhere you like!
     </p>
     <div class="pricing">
-      <img src="images/icon-music.svg" alt="">
-      <p><strong>Annual Plan</strong></p>
-      <a href="#">Change</a>
+      <div class="left-side">
+        <div class="music-icon">
+           <img src="images/icon-music.svg" class="music-icon" alt="music icon"></div>
+        <div class="text">
+          <p class="title">Annual Plan</p> <!-- first line -->
+          <p class="price">$59.99/year</p> <!-- below it -->
+        </div>
+      </div>
+
+      <div class="change-link"><a href="#">Change</a></div>
     </div>
-    <button>Proceed to Payment</button>
-    <button>Cancel Order</button>
-  
+
+    <button class="payment-button">Proceed to Payment</button>
+    <button class="cancel-order-button">Cancel Order</button>
+
   </div>
 </body>
-
-  

@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;;
 }
 
 body{
@@ -21,15 +22,19 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
+   
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     background-color: var(--blue50);
     padding: 40px;
+    border-radius: 15px; /* rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* soft shadow */
+    width: 440px; /* fixed width for that compact look */
+    text-align: center; /* keeps content nicely aligned */
 }
-
 .girl_dancing_img{
    margin: -40px;
    border-radius: 10px 10px 0 0;
@@ -42,6 +47,94 @@ h1{
 
 .description{
     margin: auto;
-    width: 90%;
+    width: 80%;
     text-align: center;
+}
+
+.pricing{
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 10px auto 20px auto;
+}
+
+.left-side{
+    display: flex;
+}
+
+.music-icon{
+    margin-right: 10px;
+}
+
+.title{
+    color: var(--gray700);
+    font-weight: bold;
+}
+
+.price{
+    color: var(--gray600);
+}
+
+.change-link{
+    margin-left: 80px;
+    
+}
+
+.change-link a{
+    color: var(--blue700);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.change-link a:hover{
+     cursor: pointer;
+}
+
+.change-link a:active{
+    color: hsl(245, 91%, 61%);
+    text-decoration: none;
+}
+
+.payment-button{
+    background-color: var(--blue700);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px hsla(245, 68%, 49%, 0.318);
+    transition: 0.3s;
+}
+
+.payment-button:hover{
+    cursor: pointer;
+}
+
+.payment-button:active{
+    background-color: hsl(245, 90%, 64%);
+}
+
+.cancel-order-button{
+    background-color: white;
+    color: var(--gray600);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.cancel-order-button:hover{
+    cursor: pointer;
+}
+
+.cancel-order-button:active{
+    color: var(--gray700);
+    font-weight: bold;
 }
